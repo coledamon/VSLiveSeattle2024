@@ -228,6 +228,17 @@ SWITCH EXPRESSIONS/PATTERN MATCHING
 //Range only works with arrays and strings, not all IEnumerables
 //Copied not referenced (which is why it doesn't work with lists)
 
+//TESTING LATER AT NIGHT---She was wrong, this does work for IEnumerables
+//List<Thing> asdf = new (){ new Thing(){ asdf = 1, sdf = 0 }, new Thing{ asdf = 1, sdf = 0 }, new Thing { asdf = 1, sdf = 0 }, new Thing { asdf = 1, sdf = 0 } };
+//var a = asdf[1..3];
+//Console.WriteLine(a);
+//Console.WriteLine(a[0] == asdf[1]);
+//public class Thing
+//{
+//    public int asdf { get; set; }
+//    public int sdf { get; set; }
+//}
+
 //Index type
 //string text = "This is some text!";
 //Index bang = ^1;
