@@ -1,0 +1,9 @@
+﻿<div>parameter: @myvalue</div>
+<input @bind-value="value" />
+
+@code {
+  [Parameter]
+  public int myvalue { get; set; }
+  [CascadingParameter]
+  public int value { get; set; }
+}

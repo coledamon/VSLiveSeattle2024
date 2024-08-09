@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WebAssembly">
+	<PropertyGroup>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<!-- https://github.com/dotnet/runtime/issues/68162 -->
+		<WasmEnableThreads>true</WasmEnableThreads>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Collatz" />
+		<PackageReference Include="Microsoft.NET.WebAssembly.Threading" />
+		<PackageReference Include="Spackle" />
+	</ItemGroup>
+</Project>

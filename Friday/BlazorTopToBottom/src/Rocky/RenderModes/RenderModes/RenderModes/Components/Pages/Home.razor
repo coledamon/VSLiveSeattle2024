@@ -1,0 +1,29 @@
+﻿@page "/"
+@inject RenderModes.RenderModeProvider renderModeProvider
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<div class="alert-info">@renderMode</div>
+
+Welcome to your new app.
+
+@code
+{
+    private string renderMode = "unknown";
+
+    protected override void OnInitialized()
+    {
+        renderMode = renderModeProvider.GetRenderMode(this).ToString();
+    }
+
+    // protected override void OnAfterRender(bool firstRender)
+    // {
+    //     if (firstRender)
+    //     {
+    //         renderMode = renderModeProvider.GetRenderMode();
+    //         StateHasChanged();
+    //     }
+    // }
+}
